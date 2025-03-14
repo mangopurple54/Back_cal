@@ -12,7 +12,7 @@ from api.serializer import CalculatorSerializer
 
 
 class CalculatorViewSet(viewsets.ModelViewSet):
-    queryset = Calculator.objects.all()
+    queryset = Calculator.objects.all().order_by('-id')
     serializer_class = CalculatorSerializer
     permission_classes = [AllowAny]
 

@@ -7,4 +7,3 @@ class CalculatorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Calculator
         fields = ["expression"]
-        ordering = ["expression"]
