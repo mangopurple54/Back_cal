@@ -56,6 +56,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "Backend_calc.urls"
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
